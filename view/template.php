@@ -17,8 +17,11 @@ if (isset($_GET["route"])) {
         include_once "view/modules/footer.php";
 
         // Si la ruta es login, se incluye solo la página de login
-    } elseif ($_GET["route"] == "login") {
-        include_once "view/modules/loginUser.php";
+    } elseif (
+        $_GET["route"] == "loginUser" ||
+        $_GET["route"] == "registerUser"
+    ) {
+        include_once "view/modules/" . $_GET["route"] . ".php";
 
         // Si la ruta no coincide con ninguna de las anteriores, se muestra el 404
     } else {
