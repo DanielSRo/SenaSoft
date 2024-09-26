@@ -11,6 +11,8 @@
                 <a href="homePage" class="nav-item nav-link active">Home</a>
                 <a href="getTrained" class="nav-item nav-link">Get trained</a>
                 <a href="product" class="nav-item nav-link">Productos</a>
+                <a href="registerWaste" class="nav-item nav-link">Register Waste</a>
+
             </div>
             <a href="loginUser" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">login<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
