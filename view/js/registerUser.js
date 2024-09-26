@@ -14,13 +14,17 @@
                 form.classList.add('was-validated')
             } else {
 
+                let name = document.getElementById('name').value
+                let lastName = document.getElementById('lastName').value
+                let mobile = document.getElementById('mobile').value
                 let email = document.getElementById('email').value
                 let password = document.getElementById('password').value
 
-                let objData = {"login":"ok", "email":email, "password":password}
+                let objData = {"register":"ok","name":name, "lastName":lastName, "mobile":mobile, "email":email, "password":password}
 
-                let objUser = new User(objData)
-                objUser.login()
+                // console.log(objData)
+                let objDataUser =  new User(objData)
+                objDataUser.registerUser()
 
             }
             form.classList.add('was-validated')
