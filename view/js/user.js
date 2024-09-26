@@ -5,15 +5,6 @@ class User {
 
     login() {
 
-        // {
-        //     "name": "Eliana",
-        //     "lastName": "Reyes",
-        //     "mobil": "3215004527",
-        //     "email": "ElianaReyes@gmail.com",
-        //     "password": "abc123",
-        //     "segurityCuestion": "¿En qué ciudad naciste?",
-        //     "segurityResponse": "Duitama"
-        // }
         let objDataUser = {
             "email": this._objData.email,
             "password": this._objData.password
@@ -61,11 +52,6 @@ class User {
             })
             .then(response => {
                 console.log(response)
-                console.log(response.status)
-
-                const confirmationModal = new bootstrap.Modal(document.getElementById('confirmationModal'));
-                confirmationModal.show();
-
             })
     }
 }

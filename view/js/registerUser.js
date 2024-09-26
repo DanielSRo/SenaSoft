@@ -22,7 +22,6 @@
 
                 let objData = {"register":"ok","name":name, "lastName":lastName, "mobile":mobile, "email":email, "password":password}
 
-                // console.log(objData)
                 let objDataUser =  new User(objData)
                 objDataUser.registerUser()
 

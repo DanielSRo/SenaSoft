@@ -15,7 +15,6 @@ if (isset($_GET["route"])) {
     ) {
         include_once "view/modules/menu.php";
         include_once "view/modules/" . $_GET["route"] . ".php";
-        include_once "view/modules/footer.php";
 
         // Si la ruta es login, se incluye solo la página de login
     } elseif (
@@ -31,7 +30,6 @@ if (isset($_GET["route"])) {
 } else {
     include_once "view/modules/menu.php";
     include_once "view/modules/homePage.php";
-    include_once "view/modules/footer.php";
 }
 
 
