@@ -10,7 +10,7 @@
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="homePage" class="nav-item nav-link active">Home</a>
                 <a href="getTrained" class="nav-item nav-link">Get trained</a>
-                <a href="" class="nav-item nav-link">Services</a>
+                <a href="product" class="nav-item nav-link">Productos</a>
             </div>
             <a href="loginUser" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">login<i class="fa fa-arrow-right ms-3"></i></a>
         </div>

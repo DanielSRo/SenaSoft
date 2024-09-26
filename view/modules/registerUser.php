@@ -1,3 +1,5 @@
+<script src="view/js/user.js"></script>
+
 <div class="container align-items-center py-4">
     <div class="row g-5 align-items-center">
         <div class="col-xl-5 mx-auto fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;">
@@ -35,18 +37,34 @@
                                     <label for="password" class="form-label">Password</label>
                                     <input type="password" class="form-control" id="password" aria-describedby="textHelp" required>
                                 </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" type="button" class="btn btn-primary w-100 py-2 px-5">Register</button>
+                            </div>
 
-                                <div class="col-12">
-                                    <button type="submit" type="button" class="btn btn-primary w-100 py-2 px-5">Register</button>
-                                </div>
-
-                                <div class="d-flex justify-content-around align-items-center">
-                                    <p><a class="text-primary fw-bold" href="loginUser">Sign in</a></p>
-                                    <p>or <a class="text-primary fw-bold" href="homePage">Cancel</a></p>
-                                </div>
-
+                            <div class="d-flex justify-content-around align-items-center">
+                                <p><a class="text-primary fw-bold" href="loginUser">Sign in</a></p>
+                                <p>or <a class="text-primary fw-bold" href="homePage">Cancel</a></p>
                             </div>
                         </form>
+
+                        <!-- Modal de confirmación -->
+                        <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="confirmationModalLabel">Registro exitoso</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ¡Tu registro se ha completado exitosamente!
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -56,4 +74,4 @@
     </div>
 </div>
 
-<script src="view/js/loginUser.js"></script>
+<script src="view/js/registerUser.js"></script>

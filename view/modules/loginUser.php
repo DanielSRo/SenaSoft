@@ -1,3 +1,5 @@
+<script src="view/js/user.js"></script>
+
 <div class="container align-items-center py-4">
     <div class="row g-5 align-items-center">
         <div class="col-xl-5 mx-auto fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;">

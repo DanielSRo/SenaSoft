@@ -10,7 +10,8 @@ if (isset($_GET["route"])) {
     if (
         $_GET["route"] == "homePage" ||
         $_GET["route"] == "service" ||
-        $_GET["route"] == "getTrained"
+        $_GET["route"] == "getTrained" ||
+        $_GET["route"] == "product"
     ) {
         include_once "view/modules/menu.php";
         include_once "view/modules/" . $_GET["route"] . ".php";
